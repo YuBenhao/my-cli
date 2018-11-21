@@ -4,11 +4,22 @@
   "description": "webpack 脚手架工具",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish_git": "git tag ${npm_package_version} && git push origin master --tags"
   },
   "bin": {
-    "my-cli":"./bin/my-cli"
+    "my-cli": "./bin/my-cli"
   },
   "author": "Benhao",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@+https://github.com:YuBenhao/my-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YuBenhao/my-cli/issues"
+  },
+  "homepage": "https://github.com/YuBenhao/my-cli",
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
 }
