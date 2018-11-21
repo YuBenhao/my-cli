@@ -8,7 +8,7 @@
   },
   "bin": {
     "my-cli":"./bin/my-cli"
-  }
+  },
   "author": "Benhao",
   "license": "MIT"
 }
