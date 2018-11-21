@@ -1,0 +1,14 @@
+{
+  "name": "my-cli",
+  "version": "1.0.0",
+  "description": "webpack 脚手架工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "my-cli":"./bin/my-cli"
+  }
+  "author": "Benhao",
+  "license": "MIT"
+}
