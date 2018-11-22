@@ -11,7 +11,7 @@ function getEntry () {
     if (entryExists) {
       const newEntry = [ entry ]
       if (config.__env === 'production' && config.publicPath.startsWith('.')) {
-        newEntry.unshift(getPath.cmd('utils/public-path'))
+        newEntry.unshift(getPath.cmd('./src/utils/public-path'))
       }
       if (config.__env === 'development' && config.vue) {
         newEntry.unshift(

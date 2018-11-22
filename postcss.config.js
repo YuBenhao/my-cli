@@ -1,5 +1,5 @@
-const defaultConfig = require('./config/default')
-const { getConfig } = require('./config')
+const defaultConfig = require('./src/config/default')
+const { getConfig } = require('./src/config')
 const config = getConfig()
 
 const plugins = [

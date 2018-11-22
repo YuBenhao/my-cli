@@ -23,7 +23,7 @@ module.exports = (template, projectname, option) => {
   projectname = projectname || './'
   // 已创建 project 则在 project 目录下初始化, 否则在当前目录初始化
   if (fs.existsSync(projectname)) {
-    message = projectname === './'
+    let message = projectname === './'
       ? '要在当前目录初始化模板吗？'
       : `目录 ${projectname} 已存在，继续生成？`
     inquirer.prompt([{
@@ -54,8 +54,8 @@ module.exports = (template, projectname, option) => {
 
   function install() {
     const spinner = ora().start('[2/2] 正在安装依赖...')
-    const command = option.npm ?
-      ['npm', ['install', '--registry=https://registry.npm.taobao.org'], { cwd: getPath.cwd(projectname) }]
+    const command = option.npm 
+      ? ['npm', ['install', '--registry=https://registry.npm.taobao.org'], { cwd: getPath.cwd(projectname) }]
       : ['yarn', { cwd: getPath.cwd(projectname) }]
     execa(...command).then(() => {
       spinner.succeed('[2/2] 已完成依赖安装')

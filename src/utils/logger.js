@@ -1,7 +1,7 @@
 const chalk = require('chalk')
 const format = require('util').format
 
-const prefix = 'Talk'
+const prefix = 'my-cli'
 const sep = chalk.gray('>')
 
 module.exports = {

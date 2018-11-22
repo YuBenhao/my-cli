@@ -1,6 +1,6 @@
 const path = require('path')
 
-const baseCmd = path.resolve(__dirname, '../')
+const baseCmd = path.resolve(__dirname, '../../')
 const baseCwd = process.cwd()
 
 const cmd = (...rest) => {
